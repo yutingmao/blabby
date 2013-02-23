@@ -1,0 +1,127 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+div {
+	color: #555555;
+}
+
+input {
+	color: #555555;
+	font: 12px Verdana, Arial;
+}
+
+textarea {
+	color: #555555;
+	font: 12px Verdana, Arial;
+}
+
+body {
+	font: 12px Verdana, Arial, "Bitstream Vera Sans", sans-serif;
+	background-color: #f8f8f8;
+}
+
+a {
+	text-decoration: none;
+	color: #246;
+	outline: none;
+	hide-focus: expression(this.hideFocus = true);
+}
+
+a:hover {
+	color: #68a;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+a:focus {
+	outline: none;
+}
+
+a:active {
+	color: #468;
+}
+
+.button-primary {
+	width: 52px;
+	height: 22px;
+	font-size: 12px;
+	color: #000000;
+	cursor: pointer;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	padding-top: 0px;
+	border-style: none;
+	background: url("../images/button.png");
+	background-repeat: no-repeat;
+	font-weight: normal;
+}
+
+.button-plane {
+	width: 55px;
+	height: 20px;
+	font-size: 12px;
+	color: #246;
+	cursor: pointer;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	background:transparent;
+	padding-top: 0px;
+	border-style: none;
+	font-weight: normal;
+}
+
+.button-primary:visited {
+	color: #fff;
+}
+
+.button-primary:hover {
+	background: url("../images/button.png");
+	text-decoration: none;
+	border: none;
+}
+
+.button-hack {
+	*padding-top: 5px;
+	*height: 18px;
+}
+
+.hidden {
+	display: none;
+}
+
+.ver_mid {
+	float: left;
+	height: 26px;
+	line-height: 26px;
+}
+
+.input {
+	font-size: 24px;
+	width: 268px;
+	padding: 3px;
+	margin-top: 2px;
+	margin-right: 6px;
+	margin-bottom: 16px;
+	border: 1px solid #e5e5e5;
+	background: #fbfbfb;
+	font-family: Arial;
+	color: #555;
+}
+
+.input:focus {
+	border: 1px solid #bbb;
+	background-color: #fff9d2;
+}
+
+.input.focus {
+	border: 1px solid #bbb;
+	background-color: #fff9d2;
+}
+
+#err {
+	font-size: 12px;
+}

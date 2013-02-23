@@ -1,0 +1,214 @@
+form {
+	padding: 15px 30px 40px 30px;
+	font-weight: normal;
+	border-radius: 5px;
+	background: #fff;
+	background-image: url("../images/formbg.jpg");
+	_padding-right: 15px;
+}
+
+form .forgetmenot {
+	font-weight: normal;
+	float: left;
+	margin-bottom: 0;
+}
+
+.buttond {
+	float: right;
+	margin-right: 5px;
+}
+
+.errd {
+	width: 150px;
+	float: left;
+	margin-left: 5px;
+}
+
+.login {
+	width: 800px;
+	margin: 70px auto;
+}
+
+#login form p {
+	margin-bottom: 0;
+}
+
+#register form p {
+	margin-bottom: 0;
+}
+
+label {
+	color: #777;
+	font-size: 13px;
+}
+
+form .forgetmenot label {
+	font-size: 11px;
+	line-height: 19px;
+}
+
+form .alignright {
+	float: right;
+}
+
+form p {
+	margin-bottom: 24px;
+}
+
+h1 a {
+	background: url("../images/logo.jpg") no-repeat top center;
+	width: 326px;
+	height: 67px;
+	text-indent: -9999px;
+	overflow: hidden;
+	padding-bottom: 15px;
+	display: block;
+}
+
+#login {
+	width: 337px;
+	float: left;
+}
+
+#register {
+	width: 337px;
+	margin: 40px auto;
+}
+
+#user {
+	width: 337px;
+	height: 165px;
+	margin-top: 20px;
+}
+
+#user table {
+	margin: 0 auto;
+}
+
+#user img {
+	border: none;
+}
+
+#user .user-tit {
+	border-bottom: 1px solid #e0e0e0;
+	padding-bottom: 10px;
+	padding-left: 5px;
+	line-height: 17px;
+	font-weight: bold;
+}
+
+#user .user-tit span {
+	background-image: url("../images/menu.png");
+	background-position: 60px -7px;
+	width: 30px;
+	height: 25px;
+	float: left;
+}
+
+#talk {
+	float: left;
+	width: 410px;
+	border-left: 1px solid #e0e0e0;
+	padding: 10px 25px;
+	padding-right: 0px;
+	margin-left: 25px;
+}
+
+#talk td {
+	border-bottom: 1px dashed #bbb;
+	width: 400px;
+	padding: 10px 5px;
+}
+
+#talk td:hover {
+	background-color: #f3f3f3;
+}
+
+#talk img {
+	float: left;
+	margin-right: 10px;
+	border: none;
+	width: 48px;
+	height: 48px;
+}
+
+#talk .talk-tit {
+	border-bottom: 1px solid #e0e0e0;
+	padding-bottom: 10px;
+	padding-left: 5px;
+	width: 405px;
+	line-height: 17px;
+	font-weight: bold;
+}
+
+#talk .talk-tit span {
+	background-image: url("../images/list.png");
+	width: 20px;
+	height: 20px;
+	float: left;
+	margin-right: 5px;
+}
+
+#talk .talk-con {
+	padding-left: 60px;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+
+#talk .talk-con p {
+	word-break: break-all;
+	word-wrap: break-word;
+	width: 335px;
+}
+
+#talk .talk-time {
+	text-align: right;
+	padding: 5px 10px 0px 0px;
+	height: 21px;
+}
+
+#talk_main {
+	height: 480px;
+	overflow: hidden;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+#formh {
+	background-image: url("../images/formeg.jpg");
+	height: 23px;
+}
+
+#formb {
+	background-image: url("../images/formeg.jpg");
+	background-position: 0px 28px;
+	height: 22px;
+}
+
+.radio {
+	color: #777;
+	font-size: 12px;
+	padding-left: 20px;
+	margin: 10px 0px;
+}
+
+.clear {
+	clear: both;
+}
+
+.waitmsg {
+	width: 150px;
+	height: 25px;
+	float: left;
+	margin-left: 3px;
+}
+
+.waitmsg img {
+	float: left;
+}
+
+#footer {
+	text-align: center;
+	margin: 10px auto;
+	color: #999;
+	line-height: 50px;
+}

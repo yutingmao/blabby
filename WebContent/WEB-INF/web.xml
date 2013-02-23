@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+	<display-name>MicroBlog</display-name>
+	
+	    <filter>  
+            <filter-name>UrlRewriteFilter</filter-name>  
+            <filter-class>  
+                org.tuckey.web.filters.urlrewrite.UrlRewriteFilter   
+            </filter-class>  
+        </filter>  
+        <filter-mapping>  
+            <filter-name>UrlRewriteFilter</filter-name>  
+            <url-pattern>/*</url-pattern>  
+        </filter-mapping>  
+        
+	<filter>
+		<description>
+		</description>
+		<display-name>SiteFilter</display-name>
+		<filter-name>SiteFilter</filter-name>
+		<filter-class>com.nineteeneightyeight.filter.SiteFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>SiteFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	<servlet>
+		<servlet-name>dwr-invoker</servlet-name>
+		<servlet-class>org.directwebremoting.servlet.DwrServlet</servlet-class>
+		<init-param>
+			<param-name>debug</param-name>
+			<param-value>true</param-value>
+		</init-param>
+		<init-param>
+			<param-name>activeReverseAjaxEnabled</param-name>
+			<param-value>true</param-value>
+		</init-param>
+		<!-- 毫秒数。页面默认的请求间隔时间是5秒 -->
+		<init-param>
+			<param-name>disconnectedTime</param-name>
+			<param-value>10000</param-value>
+		</init-param>
+		<init-param>
+			<param-name>initApplicationScopeCreatorsAtStartup</param-name>
+			<param-value>true</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>dwr-invoker</servlet-name>
+		<url-pattern>/dwr/*</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description>
+		</description>
+		<display-name>Welcome</display-name>
+		<servlet-name>Welcome</servlet-name>
+		<servlet-class>com.nineteeneightyeight.action.Welcome</servlet-class>
+	</servlet>
+	
+		<servlet>
+		<description>
+		</description>
+		<display-name>Welcome2</display-name>
+		<servlet-name>Welcome2</servlet-name>
+		<servlet-class>com.nineteeneightyeight.action.Welcome2</servlet-class>
+	</servlet>
+	
+	
+	<servlet>
+		<description>
+		</description>
+		<display-name>BroadcastAction</display-name>
+		<servlet-name>BroadcastAction</servlet-name>
+		<servlet-class>com.nineteeneightyeight.action.BroadcastAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>UserAction</display-name>
+		<servlet-name>UserAction</servlet-name>
+		<servlet-class>com.nineteeneightyeight.action.UserAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>StatusAction</display-name>
+		<servlet-name>StatusAction</servlet-name>
+		<servlet-class>com.nineteeneightyeight.action.StatusAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>CommentAction</display-name>
+		<servlet-name>CommentAction</servlet-name>
+		<servlet-class>com.nineteeneightyeight.action.CommentAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>AttentionAction</display-name>
+		<servlet-name>AttentionAction</servlet-name>
+		<servlet-class>com.nineteeneightyeight.action.AttentionAction</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>FileAction</display-name>
+		<servlet-name>FileAction</servlet-name>
+		<servlet-class>com.nineteeneightyeight.action.FileAction</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Welcome</servlet-name>
+		<url-pattern>/Welcome</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>Welcome2</servlet-name>
+		<url-pattern>/Welcome2</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet-mapping>
+		<servlet-name>BroadcastAction</servlet-name>
+		<url-pattern>/BroadcastAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UserAction</servlet-name>
+		<url-pattern>/UserAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>StatusAction</servlet-name>
+		<url-pattern>/StatusAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>CommentAction</servlet-name>
+		<url-pattern>/CommentAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AttentionAction</servlet-name>
+		<url-pattern>/AttentionAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>FileAction</servlet-name>
+		<url-pattern>/FileAction</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>

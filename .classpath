@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.7.0_13">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v7.0">
+		<attributes>
+			<attribute name="owner.project.facets" value="jst.web"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Administrator/桌面/servlet-api.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Administrator/桌面/struts2-core-2.1.6.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Administrator/桌面/urlrewrite-2.6.0.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Administrator/桌面/xwork-2.1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Administrator/桌面/commons-beanutils-1.8.3.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Administrator/桌面/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Administrator/桌面/commons-logging-1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Administrator/桌面/jsp-api.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Administrator/桌面/ognl-2.6.11.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>
